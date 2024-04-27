@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LOGIN-Durgapuja</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/login_register.css">
+
+</head>
+
+<body>
+    <div class="image_container">
+        <div class="container">
+            <form class="signUp" action="{{ url_for('register') }}" method="post">
+                <marquee direction=""><h3>বাঙালির নিজস্ব উৎসব</h3></marquee>
+                <p>Enter your email address</br>and your password for account creation.
+                </p>
+                <input id="email" name="email" class="w100" type="email" placeholder="Insert Email" reqired autocomplete='off' />
+                <input id="passwordorg" name="passwordorg" type="password" placeholder="Insert Password" reqired />
+                <input id="passwordretype" name="passwordretype" type="password" placeholder="Confirm Password" reqired />
+                <button class="form-btn sx log-in" type="button">Log In</button>
+                <button class="form-btn dx" type="submit">Sign Up</button>
+                <div class="msg">{{ msg }}</div>
+            </form>
+            <form class="signIn" action="{{ url_for('enter') }}" method="post">
+                <marquee direction=""><h3>স্বাগতম</h3></marquee>
+                <input id="email" name="email" type="email" placeholder="Insert Email" autocomplete='off' reqired />
+                <input id="passwordorg" name="passwordorg" type="password" placeholder="Insert Password" reqired />
+                <button class="form-btn sx back" type="button">Back</button>
+                <button class="form-btn dx" type="submit">Log In</button>
+                <div class="msg">{{ msg }}</div>
+            </form>
+        </div>
+    </div>
+    <script src="/static/login_register.js"></script>
+</body>

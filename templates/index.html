@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/static/index.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>বাঙালির নিজের মেয়ে</title>
+
+    <style>
+      h1 {
+        text-shadow: 2px 2px black;
+      }
+
+
+      </style>
+  </head>
+  <body>
+    
+    
+  <nav>
+    <ul class="nav-flex-row">
+      <li class="nav-item">
+        <a href="#about"><b>About</b></a>
+      </li>
+      <li class="nav-item">
+        <a href="#reservation"><b>Durga Puja Classification</b></a>
+      </li>
+      <li class="nav-item">
+        <a href="#menu"><i>North Kolkata</i></a>
+      </li>
+      <li class="nav-item">
+        <a href="#shop"><i>South Kolkata</i> </a>
+      </li>
+      <li>
+        <i><b>{{ msg }}</b></i>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="section-intro">
+    
+      <header>
+        <marquee direction="down"><h1 style="text-align:absolute;color: rgb(18, 139, 135);">বাঙালির নিজস্ব উৎসব</h1></marquee>
+      </header>
+    
+    
+    <div class="link-to-book-wrapper">
+      <a class="link-to-book" href="#reservations">কলকাতার ঐতিহ্য</a>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <article>
+      <h3>
+        <b>জেনে নিন, দুর্গাপূজা কি?</b>
+      </h3>
+      <p>
+        Durga Puja (ISO: Durgā Pūjā), also known as Durgotsava or Sharodotsav, 
+        is an annual Hindu festival originating in the Indian subcontinent which reveres and pays homage to the Hindu goddess Durga, 
+        and is also celebrated because of Durga's victory over Mahishasura.
+        It is celebrated all over the world by the Hindu community, but it is particularly popular and traditionally celebrated in the Indian state of West Bengal, and other states like Bihar, Assam, Tripura, Odisha, Jharkhand, Uttar Pradesh (eastern parts) and some other countries like Bangladesh and Nepal.. 
+        The festival is observed in the Indian calendar in the month of Ashvin, which corresponds to September-October in the Gregorian calendar.
+        Durga Puja is a ten-day festival, of which the last five are of the most significance.
+        The puja is performed in homes and public, the latter featuring a temporary stage and structural decorations (known as pandals).
+        The festival is also marked by scripture recitations, performance arts, revelry, gift-giving, family visits, feasting, and public processions called a melā.
+        Durga Puja is an important festival in the Shaktism tradition of Hinduism.
+        Durga Puja in Kolkata has been inscribed on the intangible cultural heritage list of UNESCO in December 2021.
+      </p>
+    </article>
+  </section>
+
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{url_for('static', filename='DSC_1354.jpg')}}" class="d-block w-100" alt="food">
+      </div>
+      <div class="carousel-item">
+        <img src="{{url_for('static', filename='DSC_1355.jpg')}}" class="d-block w-100" alt="food">
+      </div>
+      <div class="carousel-item">
+        <img src="{{url_for('static', filename='DSC_0241.JPG')}}" class="d-block w-100" alt="food">
+      </div>
+    </div>
+    
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+  
+  <div class="container">
+    <div class="row-flex">
+      <div class="flex-column-form">
+        <h3>
+          Register for your Interset
+        </h3>
+      <form class="media-centered" action="submit" method="post">
+          <div class="form-group">
+            <p>
+              Please enroll your details if you have any interest on Durga Puja 
+            </p>
+            <input type="name" name="fname"   class="form-control" id="exampleInputName1" aria-describedby="nameHelp" placeholder="Enter your name" required>
+          </div>
+          <div class="form-group">
+            <input type="number" name="phonenumber" class="form-control" id="exampleInputphoneNumber1" placeholder="Enter your phone number" required>
+          </div>
+          <div class="form-group">
+            <input type="text" name="address" class="form-control" id="exampleInputphoneNumber2" placeholder="Enter your Address" required>
+          </div>
+          <div class="form-group">
+            <input pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"  name="email"  type="email" class="form-control" id="exampleInputphoneNumber3" placeholder="Enter your Email" required>
+          </div>
+
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      </div>
+      <div class="opening-time">
+        <h3>
+          Opening times
+        </h3>
+        <p>
+         <span>Monday—Thursday: 08:00 — 22:00</span> 
+         <span>Friday—Saturday: 09:00 — 23:00 </span>
+         <span>Sunday: 10:00 — 17:00</span>
+        </p>
+      </div>
+      <div class="contact-adress">
+        <h3>
+          Contact
+        </h3>
+        <p>
+          <span>000 9283 8456</span>
+          <span>15 Florida Ave</span>
+          <span>Palo-Alto, 1111 CA</span>
+        </p>
+      </div>
+    </div>
+    </div>
+
+
+
+    
+
+
+
+
+
+
+
+    
+
+    
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+  </body>
+  
+</html> 

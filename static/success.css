@@ -1,0 +1,60 @@
+
+*{
+    margin: 0;
+	padding: 0;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+button {
+    background-color: blue;
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    color: white;
+    
+  }
+
+.confetti{
+    background-image: url("Dawbari.JPG");
+
+	/* Full height */
+	height: 100%;
+    width: 100%;
+	/* Center and scale the image nicely */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-attachment: fixed; */
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+.success_gif{
+    display: block;
+    margin-top: 20vh;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 40%; */
+}
+
+.content{
+    border: 2px;
+    color: white;
+    text-align: center;
+}
